@@ -30,3 +30,16 @@ inventory.forEach(function(inventory_log){
 
 } );
 
+inventory.push({
+    SKU: "005",
+    name: "Pencil",
+    price: 1.99,
+    stock: 575,
+})
+
+poppedinv = inventory.pop()
+console.log("Removed Item: ",poppedinv)
+
+inventory[0].price = 12.99     //Price change
+inventory[1].stock = 450       //Restocked
+
